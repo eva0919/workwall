@@ -7,35 +7,35 @@ $(document).on('mousemove',function(e){
 			a = 1 ;
 			$(".about").animate({
 				width: "70%"
-			},700,function(){
+			},500,function(){
 				a = 0 ;
 			});
 			$(".workwall").animate({
 				width: "30%"
-			},700);
+			},500);
 	}
 	else if (e.pageX > ( $('body').width()/2)+50 && a == 0 )
 	{
 			a = 1 ;
 			$(".about").animate({
 				width: "30%"
-			},700,function(){
+			},500,function(){
 				a = 0 ;
 			});
 			$(".workwall").animate({
 				width: "70%"
-			},700);
+			},500);
 	}
 	else if (a == 0){
 			a = 1 ;
 			$(".about").animate({
 				width: "50%"
-			},700,function(){
+			},500,function(){
 				a = 0 ;
 			});
 			$(".workwall").animate({
 				width: "50%"
-			},700);
+			},500);
 
 	}
         // console.log("e.pageX: " + e.pageX + ", e.pageY: " + e.pageY  );
