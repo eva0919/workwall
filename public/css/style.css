@@ -1,0 +1,84 @@
+
+.navbar-inverse #navbar-inner {
+	background:url(../img/binding_dark.png) repeat top left;
+}
+
+.navbar-inner .container {
+	height: 90px;
+}
+.navbar-inner .container span {
+	position: relative;
+	font-size: 40px;
+	color: #eee;
+	top: 30px;
+	margin-left: 0px;
+}
+.navbar-inner .container span:hover {
+	color: #999;
+	cursor: pointer;
+}
+.titlespan {
+	text-shadow: 3px 3px 0 #000, 5px 5px 0 #eee;
+}
+.navbar-inner .container .navspan {
+	font-size: 25px;
+	position: relative;
+	left: 70%;
+}
+.workwall {
+	background-color: white;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 50%;
+	height: 100%;
+	cursor: pointer;
+	border-left: 1px solid #ccc;
+	overflow: hidden;
+}
+.workwall img {
+	position: absolute;
+	right: 550px;
+	width: 180px;
+	height: 280px;
+	top:300px;
+}
+.workwall .container {
+	position: relative;
+	margin-right: 150px;
+	top: 200px;
+	width:200px;
+}
+.wallheader {
+	font-size: 30px;
+	font-weight: bold;
+	color: #000;
+}
+.walldescribe {
+	font-size: 12px;
+	color: #888;
+}
+.about {
+	background-color: white;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 50%;
+	height: 100%;
+	cursor: pointer;
+	border-right: 1px solid #ccc;
+	overflow: hidden;
+}
+.about img {
+	position: absolute;
+	top:300px;
+	left: 550px;
+	width: 180px;
+	height: 280px;
+}
+.about .container {
+	position: relative;
+	margin-left: 150px;
+	top: 200px;
+	width: 100%;
+}
