@@ -47,6 +47,7 @@ $(".about").on("click",function(){
 		opacity: 0
 	},1000,function(){
 		$("#main_page").load("about.html .about_content");
+		$("#main_page").css("opacity","1");
 	});
 	
 });
