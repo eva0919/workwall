@@ -42,7 +42,9 @@ $(document).on('mousemove',function(e){
         // console.log( $('body').width() );
 });
 
-
+$(".about").on("click",function(){
+	$("#main_page").load("about.html .about_content");
+});
 
 // $(".about").mouseenter(function(){
 // 	if (a == 0){
