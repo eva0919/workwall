@@ -44,8 +44,11 @@ $(document).on('mousemove',function(e){
 
 $(".about").on("click",function(){
 	$("#main_page").animate({
-				$("#main_page").load("about.html .about_content");
-			},1000);
+				$("#main_page").fadeOut();
+			},1000,function(){
+				$("#main_page").load("about.html .about_page")
+				$("#main_page").fadeIn();
+			});
 	
 });
 
