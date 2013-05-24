@@ -44,9 +44,9 @@ $(document).on('mousemove',function(e){
 
 $(".about").on("click",function(){
 	$("#main_page").animate({
-				html : ""
-			},500);
-	$("#main_page").load("about.html .about_content");
+				$("#main_page").load("about.html .about_content");
+			},1000);
+	
 });
 
 // $(".about").mouseenter(function(){
