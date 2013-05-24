@@ -45,7 +45,7 @@ $(document).on('mousemove',function(e){
 $(".about").on("click",function(){
 	$("#main_page").animate({
 		opacity: 0
-	},1000,function(){
+	},500,function(){
 
 		$("#main_page").load("about.html .about_content");
 
