@@ -46,7 +46,7 @@ $(".about").on("click",function(){
 	$("#main_page").animate({
 		opacity: 0
 	},1000,function(){
-		$("#main_page").load("about.html .about_page");
+		$("#main_page").load("about.html .about_content");
 	});
 	
 });
