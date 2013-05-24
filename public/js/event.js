@@ -51,7 +51,7 @@ $(".about").on("click",function(){
 
 		$("#main_page").animate({
 		opacity: 1
-		},1
+		},500
 		);
 	});
 	
