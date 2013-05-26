@@ -45,14 +45,39 @@ $(document).on('mousemove',function(e){
 $(".about").on("click",function(){
 	$("#main_page").animate({
 		opacity: 0
-	},500,function(){
+	},300,function(){
 
-		$("#main_page").load("about.html .about_content");
+		window.setTimeout(function(){
+			$("#main_page").load("about.html .about_content");
+		},100);
+		window.setTimeout(function(){
+			$("#main_page").animate({
+			opacity: 1
+			},300
+			);
+		},400);
 
-		$("#main_page").animate({
-		opacity: 1
-		},500
-		);
+
+	});
+	
+});
+
+$(".workwall").on("click",function(){
+	$("#main_page").animate({
+		opacity: 0
+	},300,function(){
+
+		window.setTimeout(function(){
+			$("#main_page").load("workwall.html .workwall_content");
+		},100);
+		window.setTimeout(function(){
+			$("#main_page").animate({
+			opacity: 1
+			},300
+			);
+		},400);
+
+
 	});
 	
 });

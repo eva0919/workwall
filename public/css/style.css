@@ -87,3 +87,41 @@
 	left: 35%;
 	top: 150px;
 }
+.works {
+
+	width: 150px;
+	height: 150px;
+	
+	margin: 10px;
+}
+.work_describe {
+	background-color: green;
+	width: 150px;
+	height: 150px;
+	font-weight: bold;
+	position: absolute;
+	opacity: 0;
+}
+.work_img {
+	width: 150px;
+	height: 150px;
+	position: absolute;
+}
+.thumbnail p{
+	color: black;
+	text-decoration: none;
+}
+.thumbnail h3{
+	color: black;
+	text-decoration: none;
+}
+.thumbnail:hover, .thumbnail:focus {
+	border: 1px solid #0088cc;
+}
+.thumbnails a {
+	text-decoration: none;
+}
+.thumbnail>img {
+	height:200px;
+	width:300px;
+}
