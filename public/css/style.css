@@ -125,3 +125,9 @@
 	height:200px;
 	width:300px;
 }
+.workwall_content {
+	position: relative;
+	left: 35%;
+	top: 150px;
+	width: 1000px;
+}
