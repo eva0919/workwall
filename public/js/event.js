@@ -6,35 +6,41 @@ $(document).on('mousemove',function(e){
 	{
 			a = 1 ;
 			$(".about").animate({
-				width: "70%"
+				width: "60%",
+				opacity : 1
 			},500,function(){
 				a = 0 ;
 			});
 			$(".workwall").animate({
-				width: "30%"
+				width: "40%",
+				opacity : 0.4
 			},500);
 	}
 	else if (e.pageX > ( $('body').width()/2)+50 && a == 0 )
 	{
 			a = 1 ;
 			$(".about").animate({
-				width: "30%"
+				width: "40%",
+				opacity : 0.4
 			},500,function(){
 				a = 0 ;
 			});
 			$(".workwall").animate({
-				width: "70%"
+				width: "60%",
+				opacity : 1
 			},500);
 	}
 	else if (a == 0){
 			a = 1 ;
 			$(".about").animate({
-				width: "50%"
+				width: "50%",
+				opacity : 0.4
 			},500,function(){
 				a = 0 ;
 			});
 			$(".workwall").animate({
-				width: "50%"
+				width: "50%",
+				opacity : 0.4
 			},500);
 
 	}
