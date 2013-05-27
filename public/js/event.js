@@ -46,7 +46,7 @@ $(".about").on("click",function(){
 	$("#main_page").animate({
 		opacity: 0
 	},300,function(){
-
+		$("#main_page").html("");
 		window.setTimeout(function(){
 			$("#main_page").load("about.html .about_content");
 		},100);
@@ -66,7 +66,7 @@ $(".workwall").on("click",function(){
 	$("#main_page").animate({
 		opacity: 0
 	},300,function(){
-
+		$("#main_page").html("");
 		window.setTimeout(function(){
 			$("#main_page").load("workwall.html .workwall_content");
 		},100);
