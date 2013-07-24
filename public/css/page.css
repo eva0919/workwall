@@ -68,3 +68,10 @@ body {
 	cursor: pointer;
 	color: white;
 }
+#loader {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        top:300px;
+        background-color: black;
+      }

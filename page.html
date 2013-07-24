@@ -5,15 +5,17 @@
 	<link href="public/css/bootstrap.min.css" rel="stylesheet" >
 	<link href='http://fonts.googleapis.com/css?family=Joti+One' rel='stylesheet' type='text/css'>
 	<link href="public/css/page.css" rel="stylesheet" >
+
 </head>
 <body>
+	<div id='loader'></div>
 	<div id="content" ng-app="">
 		<div ng-controller="firstctrl">
 
 			<div id="left" >
 				<div class="about_content">
-					<p>大家好，我是Mikeva，陳昱安</p>
-					我是Mikeva，你家的小熊，陳昱安。 <br>
+					<p>我是Mikeva，你家的小熊，陳昱安。</p>
+					 <br>
 					小小工程師。 <br>
 					目前研究RoR(Ruby on rails)、 javscript、HTML 等 <br>
 					略懂一奈米的C/C++ 和 JAVA <br>
@@ -24,6 +26,10 @@
 				<br>
 				<br>
 					My Email: eva091960601@gmail.com	<br>
+				</div>
+				<div class={{data.label}} >
+					<div></div>
+					<div></div>
 				</div>
 			</div>
 			<div id="middle">
@@ -51,4 +57,13 @@
 <script type="text/javascript" src="public/js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="public/js/angular.min.js"></script>
 <script type="text/javascript" src="public/js/event.js"></script>
+<script>
+          // Wait for window load
+          $(window).load(function() {
+              // Animate loader off screen
+              $("#loader").animate({
+                  top: -200
+              }, 1500);
+          });
+      </script>  
 </html>

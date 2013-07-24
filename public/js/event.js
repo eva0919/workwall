@@ -1,3 +1,4 @@
+
 function firstctrl($scope){
 	$scope.data = {message: "panel"}
 }
