@@ -8,7 +8,17 @@
 
 </head>
 <body>
-	<div id='loader'></div>
+	<div id='loader'>
+		<div id="page_title">
+			Mikeva's Page
+		</div>
+		<div id='spin_div'>
+			<div id="hoo"></div>
+		</div>
+		<div id="loading">
+			Wait For Loading...
+		</div>
+	</div>
 	<div id="content" ng-app="">
 		<div ng-controller="firstctrl">
 
@@ -55,6 +65,7 @@
 	
 </body>
 <script type="text/javascript" src="public/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="public/js/spin.min.js"></script>
 <script type="text/javascript" src="public/js/angular.min.js"></script>
 <script type="text/javascript" src="public/js/event.js"></script>
 <script>
@@ -62,8 +73,10 @@
           $(window).load(function() {
               // Animate loader off screen
               $("#loader").animate({
-                  top: -200
-              }, 1500);
+                  opacity: 0
+              }, 700 , function(){
+              	$("#loader").remove();
+              });
           });
       </script>  
 </html>
