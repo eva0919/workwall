@@ -45,12 +45,13 @@ body {
 .mask {
 	position: absolute;
 	z-index: 100;
+	margin-top: 50px;
 }
 #white_mask {
 
 	background-color: white;
 	width: 1200px;
-	height: 1000px;
+	/*height: 1000px;*/
 	cursor: pointer;
 }
 .text_content {
@@ -64,7 +65,7 @@ body {
 
 	background-color: black;
 	width: 1200px;
-	height: 1000px;
+	/*height: 1000px;*/
 	cursor: pointer;
 	color: white;
 }
@@ -98,4 +99,39 @@ body {
 	left: 50%;
 	margin-left: -150px;
 	margin-top: 120px; 
+}
+#left_head_img {
+	position: absolute;
+	background:url(../img/942465_616031361743383_1379958441_n.jpg) no-repeat 0px 0px;
+	height: 500px;
+	width: 300px;
+	/*top: 100px;*/
+	right: 0;
+	cursor: pointer;
+	z-index: 10;
+}
+
+#left {
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	color:#23D5D7;
+	padding-top: 50px;
+}
+.about_content {
+	position: relative;
+	left: 300px;
+	font-size: 16px;
+	z-index: 1;
+}
+.about_content a {
+	cursor: pointer;
+}
+#left_title {
+	font-size: 150px;
+	font-family: 'Joti One', cursive;
+	position: relative;
+	top: 150px;
+	left: 200px;
+	color: white;
 }

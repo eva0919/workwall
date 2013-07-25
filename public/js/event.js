@@ -19,8 +19,7 @@ var opts = {
 };
 var target = document.getElementById('hoo');
 var spinner = new Spinner(opts).spin(target);
-// var spinner = new Spinner().spin();
-// target.appendChild(spinner.el);
+
 // spin end
 function firstctrl($scope){
 	$scope.data = {message: "panel"}
@@ -38,6 +37,12 @@ $("#rightimg").on('mouseenter',function(){
 $("#rightimg").on('mouseleave',function(){
 	$("#black_mask").remove();
 });
+$("#left_head_img").on('mouseenter',function(){
+	$("#left_head_img").prepend("<div id='black_mask' class='mask'><div class='text_content'>Back</div></div>")
+});
+$("#left_head_img").on('mouseleave',function(){
+	$("#black_mask").remove();
+});
 $(document).ready(function(){
 	$("#left").hide();
 	$("#leftimg").click(function(){
@@ -49,13 +54,33 @@ $(document).ready(function(){
 			window.setTimeout(function(){
 				$("#left").show();
 				$("#middle").hide();
+				$("#left").animate({
+						opacity: 1
+				},400);
 			},200);
 			
 			
 		});
 		
 	});
-
+	$("#left_head_img").click(function(){
+		// window.setTimeout(function(){},)
+		
+		$("#left").animate({
+			opacity: 0
+		},500,function(){
+			window.setTimeout(function(){
+				$("#middle").show();
+				$("#left").hide();
+				$("#middle").animate({
+						opacity: 1
+				},400);
+			},200);
+			
+			
+		});
+		
+	});
 	$("#right").hide();
 	$("#rightimg").click(function(){
 		// window.setTimeout(function(){},)
