@@ -43,6 +43,66 @@ $("#left_head_img").on('mouseenter',function(){
 $("#left_head_img").on('mouseleave',function(){
 	$("#black_mask").remove();
 });
+
+$(".item").on('mouseenter',function(){
+	var name = $(this).attr('name');
+	var pre = "<div id='color_mask' class='c_mask'><div class='item_content'>"+name+"</div></div>"
+	$(this).prepend(pre);
+	$("#color_mask").hide();
+	$("#color_mask").slideDown('fast');
+});
+$(".item").on('mouseleave',function(){
+	$("#color_mask").remove();
+});
+
+var data_label = {
+	"1":{
+		name:"itree",
+		url:"http://itree.heroku.com/"
+	},
+	"2":{
+		name:"Rumbleat",
+		url:"http://rumbleat.heroku.com/"
+	},
+	"3":{
+		name:"Firebox",
+		url:"http://firebox.heroku.com/"
+	}
+
+};
+$(".item").on('click',function(){
+	var label = $(this).attr("data-label");
+	$("html").prepend("<div class='all_mask'></div>")
+	$(".all_mask").hide();
+	var pre = "<div id='pop_data'><div class='pop_content'>Name : "+data_label[label].name+"</div><a href='"+data_label[label].url+"' target='_blank'><div class='pop_content'>"+data_label[label].url+"</div></a><div id='close'><i class='icon-remove-sign icon-2x'></i></div></div>"
+	$("html").prepend(pre);
+	$(".all_mask").slideDown();
+
+	$("#close").click(function(){
+
+		$("#pop_data").animate({
+			opacity: 0
+		},500,function(){
+			$("#pop_data").remove();
+			$("#pop_data").animate({
+						opacity: 1
+				},100);
+		});
+		$(".all_mask").animate({
+			opacity: 0
+		},500,function(){
+			$(".all_mask").remove();
+			$(".all_mask").animate({
+						opacity: 1
+				},100);
+		});
+	});
+});
+
+
+
+
+
 $(document).ready(function(){
 	$("#left").hide();
 	$("#leftimg").click(function(){
@@ -243,3 +303,10 @@ $(".workwall").on("click",function(){
 // 	}
 
 // });
+
+var container = document.querySelector('#works');
+var msnry = new Masonry( container, {
+  // options
+  columnWidth: 250,
+  itemSelector: '.item'
+});
